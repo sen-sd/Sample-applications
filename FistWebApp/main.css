@@ -1,0 +1,70 @@
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
+
+ul {
+    font-family: helvetica;
+}
+
+
+/*
+Add a new rule with a .btn class selector for your HTML button. 
+To make the button colors different from the general light or dark theme colors, 
+set the color and background-color properties in this rule. 
+styles for the size, shape, appearance
+They'll override the default ones set in the body rule of your CSS file.
+*/
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+
+  li {
+    list-style: circle;
+  }
+  
+  .list {
+    list-style: square;
+  }
+  
+  #msg {
+    font-family: monospace;
+  }
+
+  :root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+
+  /* 
+  light and dark theme. Define some new variables, 
+  --btnBg and --btnFontColor, 
+  to specify the button-specific background color and font color.
+  */
+  .light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+  
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+
+body{
+    background-color: var(--bg);
+}
